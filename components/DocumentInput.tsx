@@ -38,7 +38,7 @@ export const DocumentInput: React.FC<DocumentInputProps> = ({
     // Dynamically import pdf.js to prevent it from blocking initial app load
     const pdfjsLib = await import('pdfjs-dist');
     // Set the workerSrc for pdf.js just-in-time. This is required for it to work.
-    pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@4.4.170/build/pdf.worker.min.mjs`;
+    pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdn.jsdelivr.net/npm/pdfjs-dist@4.10.38/build/pdf.worker.min.mjs`;
     
     const arrayBuffer = await readFileAsArrayBuffer(file);
     const pdf = await pdfjsLib.getDocument(arrayBuffer).promise;
