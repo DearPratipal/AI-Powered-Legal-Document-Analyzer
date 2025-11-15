@@ -1,21 +1,106 @@
 
 export const sampleLegalText = `
-SOFTWARE-AS-A-SERVICE AGREEMENT
 
-This Software-as-a-Service Agreement (the "Agreement") is entered into as of October 26, 2023 (the "Effective Date"), by and between InnovateTech Solutions Inc., a Delaware corporation with its principal place of business at 123 Tech Avenue, Silicon Valley, CA 94000 ("Provider"), and Global Corp Enterprises, a New York corporation with its principal place of business at 456 Business Plaza, New York, NY 10001 ("Customer").
+# **📄 SOFTWARE-AS-A-SERVICE (SaaS) AGREEMENT – PROJECT VERSION**
 
-1. SERVICES AND RIGHT TO USE
-Provider grants Customer a non-exclusive, non-transferable, worldwide right to use the services, and any related software, solely for its internal business purposes, for the term of this Agreement.
+This **Software-as-a-Service Agreement ("Agreement")** is a customized and project-aligned document prepared for the academic and development work carried out by the student team of **M. M. Institute of Computer Technology & Business Management (MCA Department), Maharishi Markandeshwar (Deemed to be University), Mullana–Ambala**.
+This Agreement represents the collaborative effort between the **Project Development Team** and the **Institution/Users** who utilize the software solution titled **“AI-Powered Legal Document Analyzer.”**
 
-2. CONFIDENTIALITY
-Each party (the "Receiving Party") understands that the other party (the "Disclosing Party") has disclosed or may disclose business, technical or financial information relating to the Disclosing Party's business (hereinafter referred to as "Proprietary Information" of the Disclosing Party). Proprietary Information of Provider includes non-public information regarding features, functionality and performance of the Service. Proprietary Information of Customer includes non-public data provided by Customer to Provider to enable the provision of the Services ("Customer Data"). The Receiving Party agrees: (i) to take reasonable precautions to protect such Proprietary Information, and (ii) not to use or divulge to any third person any such Proprietary Information. This does not apply to information that is public knowledge, or is required to be disclosed by law.
 
-3. INDEMNITY
-Provider shall hold Customer harmless from liability to third parties resulting from infringement by the Service of any United States patent or any copyright or misappropriation of any trade secret, provided Provider is promptly notified of any and all threats, claims and proceedings related thereto and given reasonable assistance and the opportunity to assume sole control over defense and settlement. Provider will not be responsible for any settlement it does not approve in writing. The foregoing obligations do not apply with respect to portions or components of the Service (i) not supplied by Provider, (ii) made in whole or in part in accordance with Customer specifications, or (iii) combined with other products, processes or materials where the alleged infringement would not have occurred without such combination.
+## **1. SERVICES AND USAGE RIGHTS**
 
-4. TERMINATION
-This Agreement is effective for a period of one (1) year. Either party may terminate this Agreement with thirty (30) days' written notice if the other party materially breaches any of the terms or conditions of this Agreement. Upon any termination, Customer will immediately cease all use of the Service.
+The Project Team grants the Institution and authorized users a **non-exclusive, non-transferable right** to use the AI-Powered Legal Document Analyzer strictly for:
 
-5. GOVERNING LAW
-This Agreement shall be governed by the laws of the State of Delaware, without regard to its conflict of laws provisions. Any disputes under this Agreement shall be resolved in a court of general jurisdiction in Wilmington, Delaware.
+* Academic, research, and internal institutional purposes
+* Demonstration, evaluation, and project review
+* Enhancing legal text understanding and document interpretation
+
+The system is provided strictly for **non-commercial use**, as it is an academic project.
+
+## **2. CONFIDENTIALITY**
+Both parties agree to maintain the confidentiality of:
+
+* Project code, architecture, and technical workflows
+* User data processed within the system
+* Research materials, datasets, and API keys used during development
+
+Information may only be disclosed if:
+
+* Required by institutional rules
+* Requested by authorized faculty
+* Mandated by law
+
+Confidentiality will remain valid even after project completion.
+
+## **3. LIABILITY & INDEMNITY**
+The Project Team shall not be liable for:
+
+* Misuse of the system
+* Unauthorized data additions, deletions, or external misuse
+* Modifications made by users without team approval
+
+The system is provided *as an academic prototype* and therefore:
+
+* It may not fully replace human legal analysis
+* It is not intended for professional legal decision-making
+
+Any enhancements or external integrations must be communicated to the original developers.
+
+## **4. TERMINATION**
+
+The institution or development team may discontinue system usage if:
+
+* The system is misused
+* Unauthorized edits compromise functionality
+* Institutional policies change
+
+Upon termination:
+
+* Users must stop accessing the system
+* Data associated with users may be archived or deleted
+
+---
+
+## **5. GOVERNING CONDITIONS**
+
+This academic agreement follows:
+
+* Institutional policies of **Maharishi Markandeshwar (Deemed to be University)**
+* Ethical guidelines for research & development
+* Standard non-commercial usage policies for student projects
+
+---
+
+# 🏅 **Certification**
+
+This is to certify that the project entitled **“AI-Powered Legal Document Analyzer”** has been successfully developed and submitted by the following students:
+
+* **PRATIPAL KUMAR SINGH (Roll No. 1323607)** — Development & Implementation Support
+* **SANJU KUMARI (Roll No. 1323544)** — Ideation, Execution & Team Coordination
+* **JITENDRA KUMAR (Roll No. 1323612)** — Research, Workflow Mapping & Overall Handling
+
+Students of **BCA 3rd Year, Bachelor of Computer Application**,
+**M. M. Institute of Computer Technology & Business Management (MCA Department)**,
+**Maharishi Markandeshwar (Deemed to be University), Mullana–Ambala**.
+
+This project is an authentic record of work executed with **institutional guidance**, **industrial research exposure**, and **ethical academic standards**.
+
+The content is original and **has not been submitted** elsewhere for any academic degree or award.
+
+**Date:** 15/08/2025 – 16/11/2025
+**Place:** Ambala, Haryana
+
+---
+
+# 🙏 **Acknowledgements**
+
+We extend sincere gratitude to:
+
+* **MMICT&BM (MCA Department)** for providing continuous support, guidance, and an innovation-friendly environment
+* **Faculty mentors** for technical supervision and valuable insights
+* **Google Gemini API, React, TypeScript**, and the **open-source community** for tools enabling our AI implementation
+* **Institutional and industry advisors** for professional direction
+* **Family, peers, and friends** for constant motivation and encouragement
+
+Their contributions played a vital role in the success and completeness of this AI-powered project.
 `;
