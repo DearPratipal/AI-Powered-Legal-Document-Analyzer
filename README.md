@@ -1,189 +1,246 @@
-# AI-Powered Legal Document Analyzer
-
-An industry-grade Data Science & NLP project designed to automatically analyze legal documents. This system summarizes documents, extracts key clauses, and identifies potential risks using advanced transformer-based models and custom NER pipelines. Built end-to-end from data collection to model deployment.
-
----
-
-## 🚀 Project Overview
-
-Legal professionals often spend hours reviewing long contracts and court documents. This process is slow, costly, and vulnerable to human error.
-
-This project provides an AI-driven automated solution:
-
-### ✔ Summarizes long legal documents  
-### ✔ Extracts important clauses  
-### ✔ Highlights risky or non-standard content  
-### ✔ Provides a clean, web-based analysis interface  
+# 🚀 AI-Powered Legal Document Analyzer  
+An end-to-end NLP-driven system that automatically summarizes legal documents, extracts key clauses, and identifies potential risks using transformer-based models and Gemini API. Designed with a clean and modern web interface built using **React + TypeScript + Vite**.
 
 ---
 
-## 🎯 Key Features
+## 📌 Project Overview
 
-### 🔹 1. Abstractive Document Summarization
-- Fine-tuned T5/BART models  
-- Produces concise and meaningful summaries  
+Legal documents are long, complex, and time-consuming to review. This system simplifies the process by allowing users to upload a document and instantly receive:
 
-### 🔹 2. Clause Extraction (NER-Based)
-Detects clauses such as:
-- Indemnity  
+- ✔ A concise summary  
+- ✔ Extracted legal clauses  
+- ✔ Risk analysis & red-flag detection  
+- ✔ Structured insights through a web-based UI  
+
+The project integrates **Gemini AI**, **PDF parsing**, and a modular **TypeScript architecture**.
+
+---
+
+## 🎯 Features
+
+### 🔹 Document Summarization  
+- Generates high-quality abstractive summaries.  
+- Reduces long legal text into short meaningful sections.
+
+### 🔹 Clause Extraction  
+Automatically identifies important clauses like:  
 - Governing Law  
 - Confidentiality  
+- Indemnity  
 - Termination  
 - Payment Terms  
+- Liability & Limitations  
 
-Built using:
-- spaCy NER  
-- Transformer-based NER (BERT-style models)
+### 🔹 Risk Identification  
+- Flags suspicious or harmful clauses.  
+- Detects ambiguity, hidden risks, and compliance issues.
 
-### 🔹 3. Risk Analysis
-- Flags suspicious or unusual clause language  
-- Uses a hybrid of rule-based logic + ML classifier  
-
-### 🔹 4. Web Application
-- Simple Flask/Streamlit UI  
-- Accepts PDF uploads  
-- Shows structured results with summaries, clauses, and risks  
+### 🔹 Modern Web Application  
+- Built using React + TypeScript  
+- Clean UI for uploading files and viewing results  
+- Fast Vite dev server  
+- API-first architecture using Gemini AI  
 
 ---
 
-## 🧠 Technical Architecture
-
-### **📌 Data Sources**
-- SEC EDGAR (Contracts)
-- CourtListener (Court Opinions)
-- Custom manually annotated clause dataset
-
----
-
-### **📌 Machine Learning Workflow**
-
-#### 1. Data Preprocessing
-- PDF → text conversion  
-- Cleaning and normalization  
-- Tokenization & segmentation  
-
-#### 2. Model Training
-- Summarization model (T5/BART)  
-- NER model (spaCy / BERT)  
-- Risk classification model  
-
-#### 3. Evaluation
-- ROUGE (summarization)  
-- Precision/Recall/F1 (NER)  
-- Accuracy/Confusion Matrix (risk model)
-
----
-
-## 🏗 Project Structure
+## 📂 Project Structure (Updated Based on Repository)
 
 ```
-📦 AI-Legal-Document-Analyzer
-├── data/
-│   ├── raw/
-│   └── processed/
-├── models/
-│   ├── summarizer/
-│   ├── ner/
-│   └── risk_analyzer/
-├── src/
-│   ├── preprocessing/
-│   ├── summarization/
-│   ├── clause_extraction/
-│   ├── risk_analysis/
-│   └── web_app/
-├── app.py
-├── requirements.txt
+
+📦 AI-Powered-Legal-Document-Analyzer
+├── Documentation/
+│   ├── legal_doc_analyzer_guide.md
+│   └── additional_notes.md
+│
+├── components/
+│   ├── FileUploader.tsx
+│   ├── OutputBox.tsx
+│   └── Loader.tsx
+│
+├── services/
+│   ├── geminiService.ts
+│   └── pdfParser.ts
+│
+├── App.tsx
+├── index.tsx
+├── index.html
+├── constants.ts
+├── types.ts
+├── metadata.json
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── vite.config.ts
 └── README.md
-```
+
+````
 
 ---
 
-## 🛠 Tech Stack
+## 🧠 Tech Stack
 
-- **Python**  
-- **Hugging Face Transformers**  
-- **spaCy**  
-- **PyTorch / TensorFlow**  
-- **Scikit-Learn**  
-- **Flask / Streamlit**  
-- **PyPDF2 / pdfminer**  
+### **Frontend**
+- React  
+- TypeScript  
+- Vite  
+- Tailwind / Custom CSS  
+
+### **AI Backend**
+- Google Gemini API  
+- Custom NER rule-based extraction  
+- PDF text extraction  
+
+### **Utilities**
+- pdf.js / pdf-parser  
+- Node.js  
+- Environment variables (.env.local)
 
 ---
 
-## 🌐 Deployment Options
+## ⚙️ How It Works
 
-- Streamlit Cloud  
-- Render / Railway  
-- Docker container  
-- Local deployment  
+### 1️⃣ Input  
+User uploads a PDF or pastes text.
+
+### 2️⃣ Processing  
+Text is parsed → cleaned → sent to Gemini API.
+
+### 3️⃣ AI Analysis  
+Gemini returns:  
+- Summary  
+- Key clauses  
+- Risk score & explanation  
+
+### 4️⃣ Output UI  
+Results displayed in a clean, structured layout.
 
 ---
 
-## 📥 Installation
+## ▶️ Run Locally
 
-### Clone the Repository
+### **Prerequisites**
+- Node.js  
+- Gemini API Key  
+
+---
+
+### **1. Install Dependencies**
 ```bash
-git clone https://github.com/yourusername/AI-Legal-Document-Analyzer.git
-cd AI-Legal-Document-Analyzer
+npm install
+````
+
+### **2. Configure API Key**
+
+Create a file named:
+
+```
+.env.local
 ```
 
-### Install Dependencies
-```bash
-pip install -r requirements.txt
+Add:
+
+```
+GEMINI_API_KEY=your_api_key_here
 ```
 
-### Run the Application
+### **3. Run Development Server**
+
 ```bash
-python app.py
+npm run dev
 ```
+
+App will start at:
+👉 [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🌐 Deployment
+
+This app can be deployed on:
+
+* Vercel
+* Netlify
+* GitHub Pages
+* Render
+* Cloudflare Pages
+
+Add `GEMINI_API_KEY` to deployment environment variables.
+
+---
+
+## 📘 Documentation
+
+All documentation is inside the **Documentation** folder:
+
+* System architecture
+* Prompt engineering guide
+* Developer notes
+* Workflow explanation
 
 ---
 
 ## 🧪 Future Enhancements
 
-- Multi-language legal document support  
-- OCR for scanned PDFs  
-- Clause comparison engine  
-- Better visualization dashboards  
-- Larger fine-tuned legal domain LLMs  
+* OCR support for scanned images
+* Multilingual document analysis
+* Fine-tuned Legal-LLM integration
+* Automated contract comparison
+* Downloadable analysis report (PDF)
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome!  
-Submit issues or pull requests to improve the project.
+Contributions and suggestions are welcomed.
 
 ---
 
-## 📜 License
+## 🏅 Certification
 
-Licensed under the **MIT License**.
+This is to certify that the project entitled **“AI-Powered Legal Document Analyzer”** submitted by **PRATIPAL KUMAR SINGH (Roll No. 1323607)** as *Development and Implementation Support*, and **SANJU KUMARI (Roll No. 1323544)** for *Ideation, Execution, and Overall Handling*, students of **BCA 3rd Year, Bachelor of Computer Application**,  
+**M. M. Institute of Computer Technology & Business Management (MCA Department)**,  
+**Maharishi Markandeshwar (Deemed to be University), Mullana–Ambala**,  
+is a bona fide record of work carried out by them with institutional and industrial guidance.
+
+We hereby certify that the content of this project is original and has **not been submitted** to any other university or institute for the award of any degree or diploma.
+
+**Date:** 15/08/2025 – 16/11/2025  
+**Place:** Ambala, Haryana  
 
 ---
 
 ## 🙏 Acknowledgements
 
-Special thanks to:
-- Public datasets (SEC EDGAR, CourtListener)  
-- Hugging Face & spaCy open-source communities  
+We express our heartfelt gratitude to everyone who contributed to the successful completion of this project:
 
+- **M. M. Institute of Computer Technology & Business Management (MMICT&BM)** for academic and infrastructural support  
+- **Faculty mentors and supervisors** for their encouragement, guidance, and expert insights  
+- **Google Gemini API, React, TypeScript, and the open-source developer community** whose tools and research enabled the technical success of this project  
+- **Industry professionals and institutional support teams** for providing direction, validation, and real-world perspective  
+- **Family, friends, and peers** for their constant motivation, feedback, and support  
 
+Their collective contributions made this AI-powered system a valuable and practical implementation for legal text analysis.
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## 📜 License (MIT License)
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+Copyright (c) 2025
 
-## Run Locally
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-**Prerequisites:**  Node.js
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-"# AI-Powered-Legal-Document-Analyzer" 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
