@@ -197,7 +197,7 @@ Contributions and suggestions are welcomed.
 
 ## 🏅 Certification
 
-This is to certify that the project entitled **“AI-Powered Legal Document Analyzer”** submitted by **PRATIPAL KUMAR SINGH (Roll No. 1323607)** as *Development and Implementation Support*, and **SANJU KUMARI (Roll No. 1323544)** for *Ideation, Execution, and Overall Handling*, students of **BCA 3rd Year, Bachelor of Computer Application**,  
+This is to certify that the project entitled **“AI-Powered Legal Document Analyzer”** submitted by **PRATIPAL KUMAR SINGH (Roll No. 1323607)** as *Development and Implementation Support*, and **SANJU KUMARI (Roll No. 1323544)** & **Jitendra Kumar (Roll No. 1323612)** for *Ideation, Execution, and Overall Handling*, students of **BCA 3rd Year, Bachelor of Computer Application**,  
 **M. M. Institute of Computer Technology & Business Management (MCA Department)**,  
 **Maharishi Markandeshwar (Deemed to be University), Mullana–Ambala**,  
 is a bona fide record of work carried out by them with institutional and industrial guidance.
